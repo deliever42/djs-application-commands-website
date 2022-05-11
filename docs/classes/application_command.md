@@ -138,9 +138,9 @@ Returns: Promise\<ApplicationCommand>
 
 Set the name of command
 
-|      | TYPE   | OPTIONAL | DESCRIPTION         |
-| ---- | ------ | -------- | ------------------- |
-| name | string | none     | New name of command |
+| PARAMETER | TYPE   | OPTIONAL | DESCRIPTION         |
+| --------- | ------ | -------- | ------------------- |
+| name      | string | none     | New name of command |
 
 Returns: Promise\<ApplicationCommand>
 
@@ -148,7 +148,7 @@ Returns: Promise\<ApplicationCommand>
 
 Set the name localizations of command
 
-|               | TYPE                          | OPTIONAL | DESCRIPTION                       |
+| PARAMETER     | TYPE                          | OPTIONAL | DESCRIPTION                       |
 | ------------- | ----------------------------- | -------- | --------------------------------- |
 | localizations | { \[locale: string]: string } | none     | New name localizations of command |
 
@@ -158,7 +158,7 @@ Returns: Promise\<ApplicationCommand>
 
 Set the description of command
 
-|             | TYPE   | OPTIONAL | DESCRIPTION                |
+| PARAMETER   | TYPE   | OPTIONAL | DESCRIPTION                |
 | ----------- | ------ | -------- | -------------------------- |
 | description | string | none     | New description of command |
 
@@ -168,7 +168,7 @@ Returns: Promise\<ApplicationCommand>
 
 Set the description localizations of command
 
-|               | TYPE                          | OPTIONAL | DESCRIPTION                  |
+| PARAMETER     | TYPE                          | OPTIONAL | DESCRIPTION                  |
 | ------------- | ----------------------------- | -------- | ---------------------------- |
 | localizations | { \[locale: string]: string } | none     | New localizations of command |
 
@@ -178,9 +178,9 @@ Returns: Promise\<ApplicationCommand>
 
 Set the options of command
 
-|         | TYPE                            | OPTIONAL | DESCRIPTION            |
-| ------- | ------------------------------- | -------- | ---------------------- |
-| options | ApplicationCommandOptionData\[] | none     | New options of command |
+| PARAMETER | TYPE                            | OPTIONAL | DESCRIPTION            |
+| --------- | ------------------------------- | -------- | ---------------------- |
+| options   | ApplicationCommandOptionData\[] | none     | New options of command |
 
 Returns: Promise\<ApplicationCommand>
 
@@ -188,7 +188,7 @@ Returns: Promise\<ApplicationCommand>
 
 Set the permissions of command
 
-|             | TYPE                          | OPTIONAL | DESCRIPTION                |
+| PARAMETER   | TYPE                          | OPTIONAL | DESCRIPTION                |
 | ----------- | ----------------------------- | -------- | -------------------------- |
 | permissions | Permissions \| Permissions\[] | none     | New permissions of command |
 
@@ -198,8 +198,8 @@ Returns: Promise\<ApplicationCommand>
 
 Set the global mode of command
 
-|        | TYPE    | OPTIONAL | DESCRIPTION                |
-| ------ | ------- | -------- | -------------------------- |
-| global | boolean | none     | New global mode of command |
+| PARAMETER | TYPE    | OPTIONAL | DESCRIPTION                |
+| --------- | ------- | -------- | -------------------------- |
+| global    | boolean | none     | New global mode of command |
 
 Returns: Promise\<ApplicationCommand>

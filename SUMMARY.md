@@ -6,7 +6,7 @@
 
 ## DOCUMENTATION <a href="#docs" id="docs"></a>
 
-* [CLASSES](docs/classes/README.md)
+* [CLASSES](documentation/classes.md)
   * [ApplicationCommand](docs/classes/application\_command.md)
   * [ApplicationCommandManager](docs/classes/app\_command\_manager.md)
   * [ApplicationCommandBuilder](docs/classes/app\_command\_builder.md)
@@ -21,5 +21,5 @@
   * [SubcommandOptionBuilder](docs/classes/subcommand\_option\_builder.md)
   * [SubcommandGroupOptionBuilder](docs/classes/subcommand\_group\_option\_builder.md)
   * [UserOptionBuilder](docs/classes/user\_option\_builder.md)
-* [INTERFACES](docs/interfaces.md)
+* [INTERFACES](documentation/interfaces.md)
 * [ENUMERATIONS](docs/enums.md)

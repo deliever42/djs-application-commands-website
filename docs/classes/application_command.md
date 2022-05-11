@@ -1,5 +1,7 @@
 # ApplicationCommand
 
+## Properties
+
 ### .client
 
 The discord.js client

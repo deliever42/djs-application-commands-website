@@ -44,7 +44,7 @@ Returns: AttachmentOptionBuilder
 
 ### .setDescription(description)
 
-Set the option name
+Set the option description
 
 | PARAMETER   | TYPE   | OPTIONAL | DESCRIPTION            |
 | ----------- | ------ | -------- | ---------------------- |
@@ -54,10 +54,10 @@ Returns: AttachmentOptionBuilder
 
 ### .setRequired(required)
 
-Set the option name
+Set the option required
 
-| PARAMETER   | TYPE    | OPTIONAL | DESCRIPTION         |
-| ----------- | ------- | -------- | ------------------- |
-| description | boolean | none     | The option required |
+| PARAMETER | TYPE    | OPTIONAL | DESCRIPTION         |
+| --------- | ------- | -------- | ------------------- |
+| required  | boolean | none     | The option required |
 
 Returns: AttachmentOptionBuilder

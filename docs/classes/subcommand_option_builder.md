@@ -30,9 +30,9 @@ Type: RawApplicationCommandOptionData\[]
 
 Set the option name
 
-| PARAMETER | TYPE   | OPTIONAL | DESCRIPTION                               |
-| --------- | ------ | -------- | ----------------------------------------- |
-| fn        | string | none     | A function that returns an option builder |
+| PARAMETER | TYPE   | OPTIONAL | DESCRIPTION     |
+| --------- | ------ | -------- | --------------- |
+| name      | string | none     | The option name |
 
 Returns: SubcommandOptionBuilder
 

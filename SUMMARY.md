@@ -4,7 +4,22 @@
 
 * [Introduction](README.md)
 
-## DOCUMENTATION
+## DOCUMENTATION <a href="#docs" id="docs"></a>
 
-* [CLASSES](documentation/classes.md)
-* [INTERFACES](documentation/interfaces.md)
+* [CLASSES](docs/classes/README.md)
+  * [ApplicationCommand](docs/classes/application\_command.md)
+  * [ApplicationCommandManager](docs/classes/app\_command\_manager.md)
+  * [ApplicationCommandBuilder](docs/classes/app\_command\_builder.md)
+  * [AttachmentOptionBuilder](docs/classes/attachment\_option\_builder.md)
+  * [BooleanOptionBuilder](docs/classes/boolean\_option\_builder.md)
+  * [ChannelOptionBuilder](docs/classes/channel\_option\_builder.md)
+  * [IntegerOptionBuilder](docs/classes/integer\_option\_builder.md)
+  * [MentionableOptionBuilder](docs/classes/mentionable\_option\_builder.md)
+  * [NumberOptionBuilder](docs/classes/number\_option\_builder.md)
+  * [RoleOptionBuilder](docs/classes/role\_option\_builder.md)
+  * [StringOptionBuilder](docs/classes/string\_option\_builder.md)
+  * [SubcommandOptionBuilder](docs/classes/subcommand\_option\_builder.md)
+  * [SubcommandGroupOptionBuilder](docs/classes/subcommand\_group\_option\_builder.md)
+  * [UserOptionBuilder](docs/classes/user\_option\_builder.md)
+* [INTERFACES](docs/interfaces.md)
+* [ENUMERATIONS](docs/enums.md)

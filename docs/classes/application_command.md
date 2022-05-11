@@ -85,3 +85,121 @@ Type: ApplicationCommandOptionData\[]
 The application command manager
 
 Type: ApplicationCommandManager
+
+## Methods
+
+### .createdTimestamp
+
+The created timestamp for command
+
+Returns: number
+
+### .createdAt
+
+The created date for command
+
+Returns: Date
+
+### .guild
+
+The guild for command
+
+Returns: Guild | null
+
+### .fetchGuild()
+
+Fetch the guild of command
+
+Returns: Promise\<Guild | null>
+
+### .delete()
+
+Delete the command
+
+Returns: Promise\<void>
+
+### .edit(data)
+
+Edit the command
+
+| PARAMETER | TYPE                       | OPTIONAL | DESCRIPTION          |
+| --------- | -------------------------- | -------- | -------------------- |
+| data      | ApplicationCommandEditData | none     | New data for command |
+
+Returns: Promise\<ApplicationCommand>
+
+### .fetch()
+
+Fetch the command
+
+Returns: Promise\<ApplicationCommand>
+
+### .setName(name)
+
+Set the name of command
+
+|      | TYPE   | OPTIONAL | DESCRIPTION         |
+| ---- | ------ | -------- | ------------------- |
+| name | string | none     | New name of command |
+
+Returns: Promise\<ApplicationCommand>
+
+### .setNameLocalizations(localizations)
+
+Set the name localizations of command
+
+|               | TYPE                          | OPTIONAL | DESCRIPTION                       |
+| ------------- | ----------------------------- | -------- | --------------------------------- |
+| localizations | { \[locale: string]: string } | none     | New name localizations of command |
+
+Returns: Promise\<ApplicationCommand>
+
+### .setDescription(description)
+
+Set the description of command
+
+|             | TYPE   | OPTIONAL | DESCRIPTION                |
+| ----------- | ------ | -------- | -------------------------- |
+| description | string | none     | New description of command |
+
+Returns: Promise\<ApplicationCommand>
+
+### .setDescriptionLocalizations(localizations)
+
+Set the description localizations of command
+
+|               | TYPE                          | OPTIONAL | DESCRIPTION                  |
+| ------------- | ----------------------------- | -------- | ---------------------------- |
+| localizations | { \[locale: string]: string } | none     | New localizations of command |
+
+Returns: Promise\<ApplicationCommand>
+
+### .setOptions(options)
+
+Set the options of command
+
+|         | TYPE                            | OPTIONAL | DESCRIPTION            |
+| ------- | ------------------------------- | -------- | ---------------------- |
+| options | ApplicationCommandOptionData\[] | none     | New options of command |
+
+Returns: Promise\<ApplicationCommand>
+
+### .setPermissions(permissions)
+
+Set the permissions of command
+
+|             | TYPE                          | OPTIONAL | DESCRIPTION                |
+| ----------- | ----------------------------- | -------- | -------------------------- |
+| permissions | Permissions \| Permissions\[] | none     | New permissions of command |
+
+Returns: Promise\<ApplicationCommand>
+
+### .setGlobal(global)
+
+Set the global mode of command
+
+|        | TYPE    | OPTIONAL | DESCRIPTION                |
+| ------ | ------- | -------- | -------------------------- |
+| global | boolean | none     | New global mode of command |
+
+Returns: Promise\<ApplicationCommand>

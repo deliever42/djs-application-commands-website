@@ -1,2 +1,6 @@
+---
+description: extends BaseOption
+---
+
 # SubcommandOptionBuilder
 

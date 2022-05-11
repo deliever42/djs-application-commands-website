@@ -21,5 +21,6 @@
   * [SubcommandOptionBuilder](docs/classes/subcommand\_option\_builder.md)
   * [SubcommandGroupOptionBuilder](docs/classes/subcommand\_group\_option\_builder.md)
   * [UserOptionBuilder](docs/classes/user\_option\_builder.md)
+  * [BaseOption](docs/classes/base\_option.md)
 * [INTERFACES](documentation/interfaces.md)
 * [ENUMERATIONS](docs/enums.md)

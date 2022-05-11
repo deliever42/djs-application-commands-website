@@ -1,5 +1,13 @@
 # ApplicationCommand
 
+## Constructor
+
+| PARAMETER | TYPE                      | OPTIONAL | DESCRIPTION                     |
+| --------- | ------------------------- | -------- | ------------------------------- |
+| client    | Client                    | none     | The discord.js client           |
+| data      | RawApplicationCommandData | none     | The application comman data     |
+| manager   | ApplicationCommandManager | none     | The application command manager |
+
 ## Properties
 
 ### .client

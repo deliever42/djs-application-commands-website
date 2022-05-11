@@ -4,6 +4,12 @@ description: extends CachedManager<Snowflake, ApplicationCommand>
 
 # ApplicationCommandManager
 
+## Constructor
+
+| PARAMETER | TYPE   | OPTIONAL | DESCRIPTION           |
+| --------- | ------ | -------- | --------------------- |
+| client    | Client | none     | The discord.js client |
+
 ## Properties
 
 ### .client

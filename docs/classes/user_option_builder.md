@@ -40,7 +40,7 @@ Set the option name
 | --------- | ------ | -------- | --------------- |
 | name      | string | none     | The option name |
 
-Returns: BaseOption
+Returns: UserOptionBuilder
 
 ### .setDescription(description)
 
@@ -50,7 +50,7 @@ Set the option name
 | ----------- | ------ | -------- | ---------------------- |
 | description | string | none     | The option description |
 
-Returns: BaseOption
+Returns: UserOptionBuilder
 
 ### .setRequired(required)
 
@@ -60,4 +60,4 @@ Set the option name
 | ----------- | ------- | -------- | ------------------- |
 | description | boolean | none     | The option required |
 
-Returns: BaseOption
+Returns: UserOptionBuilder

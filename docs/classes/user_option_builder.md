@@ -30,6 +30,18 @@ The option required
 
 Type: boolean
 
+### .name\_localizations
+
+The option name localizations
+
+Type: { \[locale: string]: string }
+
+### .description\_localizations
+
+The option description localizations
+
+Type: { \[locale: string]: string }
+
 ## Methods
 
 ### .setName(name)
@@ -59,5 +71,25 @@ Set the option required
 | PARAMETER | TYPE    | OPTIONAL | DESCRIPTION         |
 | --------- | ------- | -------- | ------------------- |
 | required  | boolean | none     | The option required |
+
+Returns: UserOptionBuilder
+
+### .setNameLocalizations(localizations)
+
+Set the option name localizations
+
+| PARAMETER     | TYPE                           | OPTIONAL | DESCRIPTION                   |
+| ------------- | ------------------------------ | -------- | ----------------------------- |
+| localizations | s{ \[locale: string]: string } | none     | The option name localizations |
+
+Returns: UserOptionBuilder
+
+### .setDescriptionLocalizations(localizations)
+
+Set the option description localizations
+
+| PARAMETER     | TYPE                          | OPTIONAL | DESCRIPTION                          |
+| ------------- | ----------------------------- | -------- | ------------------------------------ |
+| localizations | { \[locale: string]: string } | none     | The option description localizations |
 
 Returns: UserOptionBuilder

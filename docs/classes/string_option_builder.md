@@ -42,6 +42,18 @@ The option choices
 
 Type: RawApplicationCommandOptionChoiceData\[]
 
+### .name\_localizations
+
+The option name localizations
+
+Type: { \[locale: string]: string }
+
+### .description\_localizations
+
+The option description localizations
+
+Type: { \[locale: string]: string }
+
 ## Methods
 
 ### .setName(name)

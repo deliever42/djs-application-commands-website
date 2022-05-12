@@ -5,7 +5,7 @@
 | PARAMETER | TYPE                      | OPTIONAL | DESCRIPTION                     |
 | --------- | ------------------------- | -------- | ------------------------------- |
 | client    | Client                    | none     | The discord.js client           |
-| data      | RawApplicationCommandData | none     | The application comman data     |
+| data      | RawApplicationCommandData | none     | The application command data    |
 | manager   | ApplicationCommandManager | none     | The application command manager |
 
 ## Properties

@@ -60,7 +60,7 @@ Set the option description
 
 Returns: BaseOption
 
-### setNameLocalizations(localizations)
+### .setNameLocalizations(localizations)
 
 Set the option name localizations
 
@@ -70,7 +70,7 @@ Set the option name localizations
 
 Returns: BaseOption
 
-### setDescriptionLocalizations(localizations)
+### .setDescriptionLocalizations(localizations)
 
 Set the option description localizations
 

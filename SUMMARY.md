@@ -22,4 +22,5 @@
   * [SubcommandGroupOptionBuilder](docs/classes/subcommand\_group\_option\_builder.md)
   * [UserOptionBuilder](docs/classes/user\_option\_builder.md)
   * [BaseOption](docs/classes/base\_option.md)
-* [TYPEDEFS](docs/typedefs.md)
+* [TYPEDEFS](docs/typedefs/README.md)
+  * [Permissions](docs/typedefs/permissions.md)

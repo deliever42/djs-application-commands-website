@@ -30,3 +30,8 @@
   * [ApplicationCommandOptionChoiceData](docs/typedefs/application\_command\_option\_choice\_data.md)
   * [ApplicationCommandOptionData](docs/typedefs/application\_command\_option\_data.md)
   * [ApplicationCommandData](docs/typedefs/application\_command\_data.md)
+  * [RawApplicationCommandOptionChoiceData](docs/typedefs/raw\_application\_command\_option\_choice\_data.md)
+  * [RawApplicationCommandOptionData](docs/typedefs/raw\_application\_command\_option\_data.md)
+  * [RawApplicationCommandData](docs/typedefs/raw\_application\_command\_data.md)
+  * [ApplicationCommandEditData](docs/typedefs/application\_command\_edit\_data.md)
+  * [Snowflake](docs/typedefs/snowflake.md)

@@ -26,6 +26,18 @@ The option type
 
 Type: number
 
+### .name\_localizations
+
+The option name localizations
+
+Type: { \[locale: string]: string }
+
+### .description\_localizations
+
+The option description localizations
+
+Type: { \[locale: string]: string }
+
 ## Methods
 
 ### .setName(name)
@@ -45,5 +57,25 @@ Set the option description
 | PARAMETER   | TYPE   | OPTIONAL | DESCRIPTION            |
 | ----------- | ------ | -------- | ---------------------- |
 | description | string | none     | The option description |
+
+Returns: BaseOption
+
+### setNameLocalizations(localizations)
+
+Set the option name localizations
+
+| PARAMETER     | TYPE                           | OPTIONAL | DESCRIPTION                   |
+| ------------- | ------------------------------ | -------- | ----------------------------- |
+| localizations | s{ \[locale: string]: string } | none     | The option name localizations |
+
+Returns: BaseOption
+
+### setDescriptionLocalizations(localizations)
+
+Set the option description localizations
+
+| PARAMETER     | TYPE                          | OPTIONAL | DESCRIPTION                          |
+| ------------- | ----------------------------- | -------- | ------------------------------------ |
+| localizations | { \[locale: string]: string } | none     | The option description localizations |
 
 Returns: BaseOption

@@ -1,8 +1,6 @@
-# Discord.JS New Discord Application Commands
+---
+description: Welcome!
+---
 
-### A module for Discord's new application commands, it can be used with Discord.JS
+# Introduction
 
-## Links
-
-* [`Website`](https://djs-application-commands.js.org)
-* [`Support`](https://discord.gg/abShf5ta3c)

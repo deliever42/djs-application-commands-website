@@ -8,8 +8,8 @@
 
 * [CLASSES](documentation/classes.md)
   * [ApplicationCommand](docs/classes/application\_command.md)
-  * [ApplicationCommandManager](docs/classes/application\_command\_manager.md)
-  * [ApplicationCommandBuilder](docs/classes/application\_command\_builder.md)
+  * [ApplicationCommandManager](docs/classes/app\_command\_manager.md)
+  * [ApplicationCommandBuilder](docs/classes/app\_command\_builder.md)
   * [AttachmentOptionBuilder](docs/classes/attachment\_option\_builder.md)
   * [BooleanOptionBuilder](docs/classes/boolean\_option\_builder.md)
   * [ChannelOptionBuilder](docs/classes/channel\_option\_builder.md)

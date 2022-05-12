@@ -16,3 +16,5 @@
 * GUILD\_STAGE\_VOICE
 * GUILD\_DIRECTORY
 * GUILD\_FORUM
+
+See also: [https://discord.com/developers/docs/resources/channel#channel-object-channel-types](https://discord.com/developers/docs/resources/channel#channel-object-channel-types)

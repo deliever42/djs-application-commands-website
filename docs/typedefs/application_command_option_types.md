@@ -15,3 +15,5 @@
 * MENTIONABLE
 * NUMBER
 * ATTACHMENT
+
+See also: [https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-option-type](https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-option-type)

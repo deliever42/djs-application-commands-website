@@ -45,3 +45,5 @@
 * SEND\_MESSAGES\_IN\_THREADS
 * USE\_EMBEDDED\_ACTIVITIES
 * MODERATE\_MEMBERS
+
+See also: [https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags ](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags)

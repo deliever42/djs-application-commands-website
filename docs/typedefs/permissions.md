@@ -2,7 +2,7 @@
 
 ### Type: Object\<string, bigint>
 
-### All Available Properties
+### Properties
 
 * CREATE\_INSTANT\_INVITE
 * KICK\_MEMBERS

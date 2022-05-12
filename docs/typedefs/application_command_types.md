@@ -2,7 +2,7 @@
 
 ### Type: Object\<string, number>
 
-### All Available Properties
+### Properties
 
 * SLASH\_COMMAND
 * USER\_CONTEXT\_MENU

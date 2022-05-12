@@ -2,7 +2,7 @@
 
 ### Type: Object\<string, number>
 
-### All Available Properties
+### Properties
 
 * GUILD\_TEXT
 * DM

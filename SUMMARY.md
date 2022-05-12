@@ -27,3 +27,6 @@
   * [ApplicationCommandOptionTypes](docs/typedefs/application\_command\_option\_types.md)
   * [ChannelTypes](docs/typedefs/channel\_types.md)
   * [ApplicationCommandTypes](docs/typedefs/application\_command\_types.md)
+  * [ApplicationCommandOptionChoiceData](docs/typedefs/application\_command\_option\_choice\_data.md)
+  * [ApplicationCommandOptionData](docs/typedefs/application\_command\_option\_data.md)
+  * [ApplicationCommandData](docs/typedefs/application\_command\_data.md)

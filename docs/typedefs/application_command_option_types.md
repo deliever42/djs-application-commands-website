@@ -2,7 +2,7 @@
 
 ### Type: Object\<string, number>
 
-### All Available Properties
+### Properties
 
 * SUB\_COMMAND
 * SUB\_COMMAND\_GROUP

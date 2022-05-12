@@ -1,5 +1,5 @@
 ---
-description: extends BaseOption
+description: extends BaseOptionBuilder
 ---
 
 # ChannelOptionBuilder
@@ -89,3 +89,9 @@ Set the option channel types
 | channelTypes | ChannelTypes\[] | none     | The option channel types |
 
 Returns: ChannelOptionBuilder
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

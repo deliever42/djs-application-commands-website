@@ -1,5 +1,5 @@
 ---
-description: extends BaseOption
+description: extends BaseOptionBuilder
 ---
 
 # StringOptionBuilder
@@ -100,9 +100,9 @@ Returns: StringOptionBuilder
 
 Add the option choice
 
-| PARAMETER | TYPE                               | OPTIONAL | DESCRIPTION       |
-| --------- | ---------------------------------- | -------- | ----------------- |
-| choice    | ApplicationCommandOptionChoiceData | none     | The option choice |
+| PARAMETER | TYPE                                 | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------ | -------- | ----------------------------------------- |
+| choice    | fn: (builder: ChoiceBuilder) => void | none     | A function that returns an option builder |
 
 Returns: StringOptionBuilder
 
@@ -110,8 +110,14 @@ Returns: StringOptionBuilder
 
 Add the option choices
 
-| PARAMETER  | TYPE                                  | OPTIONAL | DESCRIPTION        |
-| ---------- | ------------------------------------- | -------- | ------------------ |
-| ...choices | ApplicationCommandOptionChoiceData\[] | none     | The option choices |
+| PARAMETER  | TYPE                                  | OPTIONAL | DESCRIPTION                               |
+| ---------- | ------------------------------------- | -------- | ----------------------------------------- |
+| ...choices | ((builder: ChoiceBuilder) => void)\[] | none     | A function that returns an option builder |
 
 Returns: StringOptionBuilder
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

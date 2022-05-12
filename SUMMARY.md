@@ -21,7 +21,7 @@
   * [SubcommandOptionBuilder](docs/classes/subcommand\_option\_builder.md)
   * [SubcommandGroupOptionBuilder](docs/classes/subcommand\_group\_option\_builder.md)
   * [UserOptionBuilder](docs/classes/user\_option\_builder.md)
-  * [BaseOption](docs/classes/base\_option.md)
+  * [BaseOptionBuilder](docs/classes/base\_option.md)
 * [TYPEDEFS](docs/interfaces.md)
   * [Permissions](docs/typedefs/permissions.md)
   * [ApplicationCommandOptionTypes](docs/typedefs/application\_command\_option\_types.md)

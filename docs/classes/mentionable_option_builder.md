@@ -1,5 +1,5 @@
 ---
-description: extends BaseOption
+description: extends BaseOptionBuilder
 ---
 
 # MentionableOptionBuilder
@@ -73,3 +73,9 @@ Set the option required
 | required  | boolean | none     | The option required |
 
 Returns: MentionableOptionBuilder
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

@@ -1,5 +1,5 @@
 ---
-description: extends BaseOption
+description: extends BaseOptionBuilder
 ---
 
 # SubcommandOptionBuilder
@@ -68,9 +68,9 @@ Returns: SubcommandOptionBuilder
 
 Add the user option
 
-| PARAMETER | TYPE                                              | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: UserOptionBuilder) => UserOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                 | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------ | -------- | ----------------------------------------- |
+| fn        | (builder: UserOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -78,9 +78,9 @@ Returns: SubcommandOptionBuilder
 
 Add the string option
 
-| PARAMETER | TYPE                                                  | OPTIONAL | DESCRIPTION                               |
-| --------- | ----------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: StringOptionBuilder) => StringOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                   | OPTIONAL | DESCRIPTION                               |
+| --------- | -------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: StringOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -88,9 +88,9 @@ Returns: SubcommandOptionBuilder
 
 Add the integer option
 
-| PARAMETER | TYPE                                                    | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: IntegerOptionBuilder) => IntegerOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                    | OPTIONAL | DESCRIPTION                               |
+| --------- | --------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: IntegerOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -98,9 +98,9 @@ Returns: SubcommandOptionBuilder
 
 Add the boolean option
 
-| PARAMETER | TYPE                                                    | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: BooleanOptionBuilder) => BooleanOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                    | OPTIONAL | DESCRIPTION                               |
+| --------- | --------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: BooleanOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -108,9 +108,9 @@ Returns: SubcommandOptionBuilder
 
 Add the channel option
 
-| PARAMETER | TYPE                                                    | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: ChannelOptionBuilder) => ChannelOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                    | OPTIONAL | DESCRIPTION                               |
+| --------- | --------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: ChannelOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -118,9 +118,9 @@ Returns: SubcommandOptionBuilder
 
 Add the role option
 
-| PARAMETER | TYPE                                              | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: RoleOptionBuilder) => RoleOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                 | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------ | -------- | ----------------------------------------- |
+| fn        | (builder: RoleOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -128,9 +128,9 @@ Returns: SubcommandOptionBuilder
 
 Add the mentionable option
 
-| PARAMETER | TYPE                                                            | OPTIONAL | DESCRIPTION                               |
-| --------- | --------------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: MentionableOptionBuilder) => MentionableOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                        | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: MentionableOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -138,9 +138,9 @@ Returns: SubcommandOptionBuilder
 
 Add the number option
 
-| PARAMETER | TYPE                                                  | OPTIONAL | DESCRIPTION                               |
-| --------- | ----------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: NumberOptionBuilder) => NumberOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                   | OPTIONAL | DESCRIPTION                               |
+| --------- | -------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: NumberOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -148,9 +148,9 @@ Returns: SubcommandOptionBuilder
 
 Add the attachment option
 
-| PARAMETER | TYPE                                                          | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: AttachmentOptionBuilder) => AttachmentOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                       | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------------ | -------- | ----------------------------------------- |
+| fn        | (builder: AttachmentOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: SubcommandOptionBuilder
 
@@ -173,3 +173,9 @@ Set the option description localizations
 | localizations | { \[locale: string]: string } | none     | The option description localizations |
 
 Returns: SubcommandGroupOptionBuilder
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

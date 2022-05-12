@@ -1,3 +1,7 @@
+---
+description: extends Base
+---
+
 # ApplicationCommandBuilder
 
 ## Properties
@@ -142,9 +146,9 @@ Returns: ApplicationCommandBuilder
 
 Add the user option
 
-| PARAMETER | TYPE                                              | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: UserOptionBuilder) => UserOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                 | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------ | -------- | ----------------------------------------- |
+| fn        | (builder: UserOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -152,9 +156,9 @@ Returns: ApplicationCommandBuilder
 
 Add the subcommand option
 
-| PARAMETER | TYPE                                                          | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: SubcommandOptionBuilder) => SubcommandOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                       | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------------ | -------- | ----------------------------------------- |
+| fn        | (builder: SubcommandOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -162,9 +166,9 @@ Returns: ApplicationCommandBuilder
 
 Add the subcommand group option
 
-| PARAMETER | TYPE                                                                    | OPTIONAL | DESCRIPTION                               |
-| --------- | ----------------------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: SubcommandGroupOptionBuilder) => SubcommandGroupOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                            | OPTIONAL | DESCRIPTION                               |
+| --------- | ----------------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: SubcommandGroupOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -172,9 +176,9 @@ Returns: ApplicationCommandBuilder
 
 Add the string option
 
-| PARAMETER | TYPE                                                  | OPTIONAL | DESCRIPTION                               |
-| --------- | ----------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: StringOptionBuilder) => StringOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                   | OPTIONAL | DESCRIPTION                               |
+| --------- | -------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: StringOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -182,9 +186,9 @@ Returns: ApplicationCommandBuilder
 
 Add the integer option
 
-| PARAMETER | TYPE                                                    | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: IntegerOptionBuilder) => IntegerOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                    | OPTIONAL | DESCRIPTION                               |
+| --------- | --------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: IntegerOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -192,9 +196,9 @@ Returns: ApplicationCommandBuilder
 
 Add the boolean option
 
-| PARAMETER | TYPE                                                    | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: BooleanOptionBuilder) => BooleanOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                    | OPTIONAL | DESCRIPTION                               |
+| --------- | --------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: BooleanOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -202,9 +206,9 @@ Returns: ApplicationCommandBuilder
 
 Add the channel option
 
-| PARAMETER | TYPE                                                    | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: ChannelOptionBuilder) => ChannelOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                    | OPTIONAL | DESCRIPTION                               |
+| --------- | --------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: ChannelOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -212,9 +216,9 @@ Returns: ApplicationCommandBuilder
 
 Add the role option
 
-| PARAMETER | TYPE                                              | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: RoleOptionBuilder) => RoleOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                 | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------ | -------- | ----------------------------------------- |
+| fn        | (builder: RoleOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -222,9 +226,9 @@ Returns: ApplicationCommandBuilder
 
 Add the mentionable option
 
-| PARAMETER | TYPE                                                            | OPTIONAL | DESCRIPTION                               |
-| --------- | --------------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: MentionableOptionBuilder) => MentionableOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                        | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: MentionableOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -232,9 +236,9 @@ Returns: ApplicationCommandBuilder
 
 Add the number option
 
-| PARAMETER | TYPE                                                  | OPTIONAL | DESCRIPTION                               |
-| --------- | ----------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: NumberOptionBuilder) => NumberOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                   | OPTIONAL | DESCRIPTION                               |
+| --------- | -------------------------------------- | -------- | ----------------------------------------- |
+| fn        | (builder: NumberOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
 
@@ -242,8 +246,14 @@ Returns: ApplicationCommandBuilder
 
 Add the attachment option
 
-| PARAMETER | TYPE                                                          | OPTIONAL | DESCRIPTION                               |
-| --------- | ------------------------------------------------------------- | -------- | ----------------------------------------- |
-| fn        | (builder: AttachmentOptionBuilder) => AttachmentOptionBuilder | none     | A function that returns an option builder |
+| PARAMETER | TYPE                                       | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------------ | -------- | ----------------------------------------- |
+| fn        | (builder: AttachmentOptionBuilder) => void | none     | A function that returns an option builder |
 
 Returns: ApplicationCommandBuilder
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

@@ -1,3 +1,7 @@
+---
+description: extends Base
+---
+
 # ApplicationCommand
 
 ## Constructor
@@ -211,3 +215,9 @@ Set the global mode of command
 | global    | boolean | none     | New global mode of command |
 
 Returns: Promise\<ApplicationCommand>
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

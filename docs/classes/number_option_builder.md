@@ -1,5 +1,5 @@
 ---
-description: extends BaseOption
+description: extends BaseOptionBuilder
 ---
 
 # NumberOptionBuilder
@@ -112,9 +112,9 @@ Returns: NumberOptionBuilder
 
 Add the option choice
 
-| PARAMETER | TYPE                               | OPTIONAL | DESCRIPTION       |
-| --------- | ---------------------------------- | -------- | ----------------- |
-| choice    | ApplicationCommandOptionChoiceData | none     | The option choice |
+| PARAMETER | TYPE                                 | OPTIONAL | DESCRIPTION                               |
+| --------- | ------------------------------------ | -------- | ----------------------------------------- |
+| choice    | fn: (builder: ChoiceBuilder) => void | none     | A function that returns an option builder |
 
 Returns: NumberOptionBuilder
 
@@ -122,9 +122,9 @@ Returns: NumberOptionBuilder
 
 Add the option choices
 
-| PARAMETER  | TYPE                                  | OPTIONAL | DESCRIPTION        |
-| ---------- | ------------------------------------- | -------- | ------------------ |
-| ...choices | ApplicationCommandOptionChoiceData\[] | none     | The option choices |
+| PARAMETER  | TYPE                                  | OPTIONAL | DESCRIPTION                               |
+| ---------- | ------------------------------------- | -------- | ----------------------------------------- |
+| ...choices | ((builder: ChoiceBuilder) => void)\[] | none     | A function that returns an option builder |
 
 Returns: NumberOptionBuilder
 
@@ -147,3 +147,9 @@ Set the option min value
 | minValue  | number | none     | The option min value |
 
 Returns: NumberOptionBuilder
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

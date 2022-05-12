@@ -1,5 +1,5 @@
 ---
-description: extends CachedManager<Snowflake, ApplicationCommand>
+description: extends CachedManager<Snowflake, ApplicationCommand> implements Base
 ---
 
 # ApplicationCommandManager
@@ -171,3 +171,9 @@ Set the global mode of command
 | guildId   | boolean   | yes      | Guild id of command        |
 
 Returns: Promise\<ApplicationCommand>
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

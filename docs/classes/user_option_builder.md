@@ -1,5 +1,5 @@
 ---
-description: extends BaseOption
+description: extends BaseOptionBuilder
 ---
 
 # UserOptionBuilder
@@ -93,3 +93,9 @@ Set the option description localizations
 | localizations | { \[locale: string]: string } | none     | The option description localizations |
 
 Returns: UserOptionBuilder
+
+### .toJSON()
+
+Returns the properties of the class in the object type.
+
+Returns: { \[property: string]: any }

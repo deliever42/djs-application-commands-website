@@ -1,6 +1,6 @@
 # Permissions
 
-### Type: Object\<string, bigint> <a href="#type" id="type"></a>
+### Type: Object\<string, bigint>
 
 ### All Available Properties
 

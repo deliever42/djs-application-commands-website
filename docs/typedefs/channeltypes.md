@@ -1,0 +1,18 @@
+# ChannelTypes
+
+### Type: Object\<string, number>
+
+### All Available Properties
+
+* GUILD\_TEXT
+* DM
+* GUILD\_VOICE
+* GROUP\_DM
+* GUILD\_CATEGORY
+* GUILD\_NEWS
+* GUILD\_NEWS\_THREAD
+* GUILD\_PUBLIC\_THREAD
+* GUILD\_PRIVATE\_THREAD
+* GUILD\_STAGE\_VOICE
+* GUILD\_DIRECTORY
+* GUILD\_FORUM

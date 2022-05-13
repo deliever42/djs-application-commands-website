@@ -61,7 +61,7 @@ client.on('ready', async () => {
             })
             .addIntegerOption(builder => {
                 builder
-                    .setName('deleteMessageDays')
+                    .setName('days')
                     .setDescription('Number of days of messages to delete')
                     .setMaxValue(7)
                     .setMinValue(1)
@@ -75,6 +75,8 @@ client.on('ready', async () => {
 
     const guildCommands = commands.filter(cmd => !cmd.global);
 
+    //remove all commands
+    await client.applicationCommandManager.set([]);
 
     //saving commands
     client.applicationCommandManager.set(commands);
@@ -86,7 +88,9 @@ client.on('ready', async () => {
 
     client.on('interactionCreate', async interaction => {
         if (interaction.isApplicationCommand()) {
-            const cmd = client.applicationCommandManager.cache.get(interaction.commandName);
+            const cmd = client.applicationCommandManager.cache.find(
+                (cmd) => cmd.name === interaction.commandName,
+            );
             if (!cmd) return;
 
             await interaction.deferReply({ ephemeral: true });
@@ -100,7 +104,7 @@ client.on('ready', async () => {
                 case 'ban':
                     const user = interaction.options.getUser('user');
                     const reason = interaction.options.getString('reason') ?? 'No Reason Provided.';
-                    const deleteMessageDays = interaction.options.getInteger('deleteMessageDays');
+                    const deleteMessageDays = interaction.options.getInteger('days');
 
                     interaction.guild.bans
                         .create(user.id, { reason, days: deleteMessageDays })

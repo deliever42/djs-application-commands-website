@@ -12,15 +12,17 @@ description: Welcome!
 
 ```
 discord.js >= 13.6.0
-@discordjs/collection >= 0.7.0
+@discordjs/collection >= 0.6.0
 @discordjs/rest >= 0.4.1
 @sapphire/snowflake >= 3.2.2
 ```
 
 ## Installation
 
+Node.js 16.9.0 or newer is required.
+
 ```
-npm install discord.js @discordjs/collection @discordjs/rest @sapphire/snowflake discord.js-new-application-commands
+npm install djs-application-commands
 ```
 
 ## Example
@@ -34,7 +36,7 @@ const client = new Client({
 const {
     ApplicationCommandManager,
     ApplicationCommandBuilder,
-} = require('discord.js-new-application-commands');
+} = require('djs-application-commands');
 
 client.on('ready', async () => {
     client.applicationCommandManager = new ApplicationCommandManager(client);
@@ -46,19 +48,19 @@ client.on('ready', async () => {
             .setPermissions(['BAN_MEMBERS'])
             .setDescription('Ban a member')
             .addUserOption(builder => {
-                return builder
+                builder
                     .setName('user')
                     .setDescription('User to ban')
                     .setRequired(true);
             })
             .addStringOption(builder => {
-                return builder
+                builder
                     .setName('reason')
                     .setDescription('Reason to ban')
                     .setRequired(false);
             })
             .addIntegerOption(builder => {
-                return builder
+                builder
                     .setName('deleteMessageDays')
                     .setDescription('Number of days of messages to delete')
                     .setMaxValue(7)
@@ -71,22 +73,15 @@ client.on('ready', async () => {
             .setDescription("Get the bot's ping"),
     ];
 
-    const resolvedCommands = [
-        commands.filter(cmd => cmd.global),
-        commands.filter(cmd => !cmd.global),
-    ];
+    const guildCommands = commands.filter(cmd => !cmd.global);
 
-    //saving global commands
-    client.applicationCommandManager.set(resolvedCommands[0]);
 
-    //saving guild commands
-    for (const guildId of [...client.guilds.cache.keys()]) {
-        client.applicationCommandManager.set(resolvedCommands[1], guildId);
-    }
+    //saving commands
+    client.applicationCommandManager.set(commands);
 
     //saving commands on new guild
     client.on('guildCreate', guild => {
-        client.applicationCommandManager.set(resolvedCommands[1], guild.id);
+        client.applicationCommandManager.set(guildCommands, guild.id);
     });
 
     client.on('interactionCreate', async interaction => {

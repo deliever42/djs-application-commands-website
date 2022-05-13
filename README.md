@@ -39,6 +39,7 @@ const {
 } = require('djs-application-commands');
 
 client.on('ready', async () => {
+    console.log("Bot Ready");
     client.applicationCommandManager = new ApplicationCommandManager(client);
 
     const commands = [
@@ -79,7 +80,8 @@ client.on('ready', async () => {
     await client.applicationCommandManager.set([]);
 
     //saving commands
-    client.applicationCommandManager.set(commands);
+    client.applicationCommandManager.set(commands)
+        .then(() => console.log("Successfully Saved Application Commands"))
 
     //saving commands on new guild
     client.on('guildCreate', guild => {

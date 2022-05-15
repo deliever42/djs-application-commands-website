@@ -1,5 +1,3 @@
-# ApplicationCommandManager
-
 ---
 description: extends CachedManager<Snowflake, ApplicationCommand> implements Base
 ---
